@@ -1,0 +1,786 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>ZanzoCam - Internal documentation &mdash; zanzocam-core 0.10.2 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> zanzocam-core
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">ZanzoCam - Internal documentation</a><ul>
+<li><a class="reference internal" href="#constants">Constants</a></li>
+<li><a class="reference internal" href="#main-module">Main module</a></li>
+<li><a class="reference internal" href="#configuration-module">Configuration module</a></li>
+<li><a class="reference internal" href="#system-module">System module</a></li>
+<li><a class="reference internal" href="#camera-module">Camera module</a></li>
+<li><a class="reference internal" href="#overlays-module">Overlays module</a></li>
+<li><a class="reference internal" href="#utils-module">Utils module</a></li>
+<li><a class="reference internal" href="#custom-errors">Custom Errors</a></li>
+</ul>
+</li>
+</ul>
+</div>
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">zanzocam-core</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>ZanzoCam - Internal documentation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="zanzocam-internal-documentation">
+<h1>ZanzoCam - Internal documentation<a class="headerlink" href="#zanzocam-internal-documentation" title="Permalink to this headline">¶</a></h1>
+<p>Internal documentation for <code class="docutils literal notranslate"><span class="pre">zanzocam-core</span></code>.</p>
+<p>Better documentation coming soon.</p>
+<hr class="docutils" />
+<section id="constants">
+<h2>Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<p>Details of the constants stored in the <code class="docutils literal notranslate"><span class="pre">zanzocam.constants</span></code> module.</p>
+<span class="target" id="module-zanzocam.constants"></span><dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.AUTOHOTSPOT_BINARY_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">AUTOHOTSPOT_BINARY_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'/usr/bin/autohotspot'</span></em><a class="headerlink" href="#zanzocam.constants.AUTOHOTSPOT_BINARY_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the autohotspot script</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.BACKUP_CRONJOB">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">BACKUP_CRONJOB</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/.crontab.bak')</span></em><a class="headerlink" href="#zanzocam.constants.BACKUP_CRONJOB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the crontab’s backup</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.BASE_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">BASE_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam')</span></em><a class="headerlink" href="#zanzocam.constants.BASE_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Folder containing the source code</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CAMERA_DEFAULTS">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CAMERA_DEFAULTS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{'awb_mode':</span> <span class="pre">'auto',</span> <span class="pre">'background_color':</span> <span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0,</span> <span class="pre">0),</span> <span class="pre">'date_format':</span> <span class="pre">'%d</span> <span class="pre">%B</span> <span class="pre">%Y',</span> <span class="pre">'extension':</span> <span class="pre">'jpg',</span> <span class="pre">'height':</span> <span class="pre">100,</span> <span class="pre">'hor_flip':</span> <span class="pre">False,</span> <span class="pre">'jpeg_quality':</span> <span class="pre">90,</span> <span class="pre">'jpeg_subsampling':</span> <span class="pre">0,</span> <span class="pre">'let_awb_settle_in_dark':</span> <span class="pre">False,</span> <span class="pre">'name':</span> <span class="pre">'no-name',</span> <span class="pre">'rotation':</span> <span class="pre">0,</span> <span class="pre">'time_format':</span> <span class="pre">'%H:%M',</span> <span class="pre">'use_low_light_algorithm':</span> <span class="pre">True,</span> <span class="pre">'ver_flip':</span> <span class="pre">False,</span> <span class="pre">'width':</span> <span class="pre">100}</span></em><a class="headerlink" href="#zanzocam.constants.CAMERA_DEFAULTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fallback values for the camera configuration</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CAMERA_LOG">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CAMERA_LOG</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/camera.log')</span></em><a class="headerlink" href="#zanzocam.constants.CAMERA_LOG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs produced during the main procedure (will be sent to the server)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CAMERA_WARM_UP_TIME">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CAMERA_WARM_UP_TIME</span></span><em class="property"> <span class="pre">=</span> <span class="pre">5</span></em><a class="headerlink" href="#zanzocam.constants.CAMERA_WARM_UP_TIME" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time to allow the firmware to compute the right exposure in normal
+light conditions (AWB requires more)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CHECK_UPLINK_URL">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CHECK_UPLINK_URL</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'http://www.google.com'</span></em><a class="headerlink" href="#zanzocam.constants.CHECK_UPLINK_URL" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL to check to ensure Internet is reachable</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CONFIGURATION_FILE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CONFIGURATION_FILE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/configuration.json')</span></em><a class="headerlink" href="#zanzocam.constants.CONFIGURATION_FILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main configuration file</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.CRONJOB_FILE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">CRONJOB_FILE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'/etc/cron.d/zanzocam'</span></em><a class="headerlink" href="#zanzocam.constants.CRONJOB_FILE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the system crontab</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.DATA_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">DATA_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data')</span></em><a class="headerlink" href="#zanzocam.constants.DATA_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Folder containing the data used by the ZanzoCam for its operations</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.FAILURE_REPORT_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">FAILURE_REPORT_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/failure_report.txt')</span></em><a class="headerlink" href="#zanzocam.constants.FAILURE_REPORT_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs produced in case of issues with the server</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.FONT_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">FONT_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'</span></em><a class="headerlink" href="#zanzocam.constants.FONT_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the default font (can be customized if you install another font)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.FTP_CONFIG_FILE_ENCODING">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">FTP_CONFIG_FILE_ENCODING</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'utf-8'</span></em><a class="headerlink" href="#zanzocam.constants.FTP_CONFIG_FILE_ENCODING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ecoding of the FTP server files</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.HOTSPOT_FLAG">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">HOTSPOT_FLAG</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/hotspot.flag')</span></em><a class="headerlink" href="#zanzocam.constants.HOTSPOT_FLAG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the hotspot is allowed</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.HOTSPOT_LOGS">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">HOTSPOT_LOGS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/hotspot_logs.txt')</span></em><a class="headerlink" href="#zanzocam.constants.HOTSPOT_LOGS" title="Permalink to this definition">¶</a></dt>
+<dd><p>(probably unused, TO CHECK)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.IMAGE_OVERLAYS_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">IMAGE_OVERLAYS_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/overlays')</span></em><a class="headerlink" href="#zanzocam.constants.IMAGE_OVERLAYS_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Local camera overlays path</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.INITIAL_LOW_LIGHT_ISO">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">INITIAL_LOW_LIGHT_ISO</span></span><em class="property"> <span class="pre">=</span> <span class="pre">400</span></em><a class="headerlink" href="#zanzocam.constants.INITIAL_LOW_LIGHT_ISO" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starting ISO level for low light pictures</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.LOCALE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">LOCALE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'it_IT.utf8'</span></em><a class="headerlink" href="#zanzocam.constants.LOCALE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locale</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.MAX_SHUTTER_SPEED">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">MAX_SHUTTER_SPEED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">9500000</span></em><a class="headerlink" href="#zanzocam.constants.MAX_SHUTTER_SPEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max shutter speed allowed by the camera hardware</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.MINIMUM_DAYLIGHT_LUMINANCE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">MINIMUM_DAYLIGHT_LUMINANCE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">60</span></em><a class="headerlink" href="#zanzocam.constants.MINIMUM_DAYLIGHT_LUMINANCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum luminance for the daytime.
+If the detected luminance goes below this value, the night mode kicks in.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.MINIMUM_NIGHT_LUMINANCE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">MINIMUM_NIGHT_LUMINANCE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">30</span></em><a class="headerlink" href="#zanzocam.constants.MINIMUM_NIGHT_LUMINANCE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Minimum luminance to target for pictures in low light conditions.</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.MIN_SHUTTER_SPEED">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">MIN_SHUTTER_SPEED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">30000</span></em><a class="headerlink" href="#zanzocam.constants.MIN_SHUTTER_SPEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>Min shutter speed for low light, the max that PiCamera would use with automatic settings</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.NETWORK_DATA">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">NETWORK_DATA</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/network_data.json')</span></em><a class="headerlink" href="#zanzocam.constants.NETWORK_DATA" title="Permalink to this definition">¶</a></dt>
+<dd><p>Information about the Internet connection</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.NO_LUMINANCE_SHUTTER_SPEED">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">NO_LUMINANCE_SHUTTER_SPEED</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2000000</span></em><a class="headerlink" href="#zanzocam.constants.NO_LUMINANCE_SHUTTER_SPEED" title="Permalink to this definition">¶</a></dt>
+<dd><p>What “random” shutter speed to use if the image is so black that the equation doesn’t work</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.NO_LUMINANCE_THRESHOLD">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">NO_LUMINANCE_THRESHOLD</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#zanzocam.constants.NO_LUMINANCE_THRESHOLD" title="Permalink to this definition">¶</a></dt>
+<dd><p>When to consider the image totally black, where the low light estimation doesn’t work well</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.OVERLAY_DEFAULTS">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">OVERLAY_DEFAULTS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">{'background_color':</span> <span class="pre">(255,</span> <span class="pre">255,</span> <span class="pre">255,</span> <span class="pre">0),</span> <span class="pre">'font_color':</span> <span class="pre">(0,</span> <span class="pre">0,</span> <span class="pre">0),</span> <span class="pre">'font_size':</span> <span class="pre">30,</span> <span class="pre">'heigth':</span> <span class="pre">None,</span> <span class="pre">'image':</span> <span class="pre">None,</span> <span class="pre">'over_the_picture':</span> <span class="pre">False,</span> <span class="pre">'padding':</span> <span class="pre">50,</span> <span class="pre">'text':</span> <span class="pre">'...</span> <span class="pre">testo</span> <span class="pre">...',</span> <span class="pre">'width':</span> <span class="pre">None}</span></em><a class="headerlink" href="#zanzocam.constants.OVERLAY_DEFAULTS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fallback values for the image overlays</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.PICAMERA_AWB_MODES">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">PICAMERA_AWB_MODES</span></span><em class="property"> <span class="pre">=</span> <span class="pre">['off',</span> <span class="pre">'auto',</span> <span class="pre">'sunlight',</span> <span class="pre">'cloudy',</span> <span class="pre">'shade',</span> <span class="pre">'tungsten',</span> <span class="pre">'fluorescent',</span> <span class="pre">'incandescent',</span> <span class="pre">'flash',</span> <span class="pre">'horizon']</span></em><a class="headerlink" href="#zanzocam.constants.PICAMERA_AWB_MODES" title="Permalink to this definition">¶</a></dt>
+<dd><p>White balancing modes from picamera</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.PICTURE_LOGS">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">PICTURE_LOGS</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/picture_logs.txt')</span></em><a class="headerlink" href="#zanzocam.constants.PICTURE_LOGS" title="Permalink to this definition">¶</a></dt>
+<dd><p>(probably unused, TO CHECK)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.PREVIEW_PICTURE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">PREVIEW_PICTURE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/web_ui/static/previews/zanzocam-preview.jpg')</span></em><a class="headerlink" href="#zanzocam.constants.PREVIEW_PICTURE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the preview picture in the web UI</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.PREVIEW_PICTURE_URL">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">PREVIEW_PICTURE_URL</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'static/previews/zanzocam-preview.jpg'</span></em><a class="headerlink" href="#zanzocam.constants.PREVIEW_PICTURE_URL" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL to the preview picture in the web UI</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.REMOTE_IMAGES_PATH">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">REMOTE_IMAGES_PATH</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'configuration/overlays/'</span></em><a class="headerlink" href="#zanzocam.constants.REMOTE_IMAGES_PATH" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remote camera overlays path</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.REQUEST_TIMEOUT">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">REQUEST_TIMEOUT</span></span><em class="property"> <span class="pre">=</span> <span class="pre">60</span></em><a class="headerlink" href="#zanzocam.constants.REQUEST_TIMEOUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Timeout for HTTP requests</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.SERVER_LOG">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">SERVER_LOG</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/interface.log')</span></em><a class="headerlink" href="#zanzocam.constants.SERVER_LOG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs of the local server (stay on disk and get rotated)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.SYSTEM_USER">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">SYSTEM_USER</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'zanzocam-bot'</span></em><a class="headerlink" href="#zanzocam.constants.SYSTEM_USER" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main user of the system, must be able to perform a passwordless sudo</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.TARGET_LUMINOSITY_MARGIN">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">TARGET_LUMINOSITY_MARGIN</span></span><em class="property"> <span class="pre">=</span> <span class="pre">3</span></em><a class="headerlink" href="#zanzocam.constants.TARGET_LUMINOSITY_MARGIN" title="Permalink to this definition">¶</a></dt>
+<dd><p>How much tolerance to give to the low light search algorithm</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.TEMP_CRONJOB">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">TEMP_CRONJOB</span></span><em class="property"> <span class="pre">=</span> <span class="pre">PosixPath('/home/runner/work/zanzocam-core/zanzocam-core/zanzocam/data/.tmp-cronjob-file')</span></em><a class="headerlink" href="#zanzocam.constants.TEMP_CRONJOB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Temporary crontab path</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.VERSION">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">VERSION</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'1.1.0'</span></em><a class="headerlink" href="#zanzocam.constants.VERSION" title="Permalink to this definition">¶</a></dt>
+<dd><p>ZanzoCam version</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.WAIT_AFTER_CAMERA_FAIL">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">WAIT_AFTER_CAMERA_FAIL</span></span><em class="property"> <span class="pre">=</span> <span class="pre">30</span></em><a class="headerlink" href="#zanzocam.constants.WAIT_AFTER_CAMERA_FAIL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Time to wait in between failed shots of the camera (to overcome colliding crontabs)</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="zanzocam.constants.ZANZOCAM_EXECUTABLE">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.constants.</span></span><span class="sig-name descname"><span class="pre">ZANZOCAM_EXECUTABLE</span></span><em class="property"> <span class="pre">=</span> <span class="pre">'/home/zanzocam-bot/venv/bin/z-webcam'</span></em><a class="headerlink" href="#zanzocam.constants.ZANZOCAM_EXECUTABLE" title="Permalink to this definition">¶</a></dt>
+<dd><p>Location of the z-webcam executable</p>
+</dd></dl>
+
+</section>
+<hr class="docutils" />
+<section id="main-module">
+<h2>Main module<a class="headerlink" href="#main-module" title="Permalink to this headline">¶</a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.main</span></code> module contains the main script that is
+executed at every trigger.</p>
+<p>Here is some internal documentation of it.</p>
+</section>
+<section id="configuration-module">
+<h2>Configuration module<a class="headerlink" href="#configuration-module" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.configuration</span></code> module.</p>
+<span class="target" id="module-zanzocam.webcam.configuration"></span><dl class="py class">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.configuration.</span></span><span class="sig-name descname"><span class="pre">Configuration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Manages the configurations.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.backup">
+<span class="sig-name descname"><span class="pre">backup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a backup copy of the configuration file.</p>
+<p>NOTE: we backup from memory and not simply copy the file
+because the file might have been overwritten by a server
+(server.update_configuration()) in the meantime.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.create_from_dictionary">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">create_from_dictionary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <a class="reference internal" href="#zanzocam.webcam.configuration.Configuration" title="zanzocam.webcam.configuration.Configuration"><span class="pre">zanzocam.webcam.configuration.Configuration</span></a><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.create_from_dictionary" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a Configuration object starting from a dictionary. Will
+save the configuration file at the specified path.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.get_camera_settings">
+<span class="sig-name descname"><span class="pre">get_camera_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.get_camera_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the information relative to the settings
+used to take and render the picture.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.get_server_settings">
+<span class="sig-name descname"><span class="pre">get_server_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.get_server_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the information relative to the settings
+used to connect to the server.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.get_start_time">
+<span class="sig-name descname"><span class="pre">get_start_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.get_start_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return either the start time defined, or 00:00</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.get_stop_time">
+<span class="sig-name descname"><span class="pre">get_stop_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.get_stop_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return either the stop time defined, or 23:59</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.get_system_settings">
+<span class="sig-name descname"><span class="pre">get_system_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.get_system_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all the information relative to the settings
+that should be applied to the system.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.overlays_to_download">
+<span class="sig-name descname"><span class="pre">overlays_to_download</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.overlays_to_download" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all the overlay images that should be downloaded from the server</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.restore_backup">
+<span class="sig-name descname"><span class="pre">restore_backup</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.restore_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restores the configuration file from its backup copy.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.configuration.Configuration.within_active_hours">
+<span class="sig-name descname"><span class="pre">within_active_hours</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.configuration.Configuration.within_active_hours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compares the current time with the start-stop times and
+return True if inside the interval, False if outside.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="system-module">
+<h2>System module<a class="headerlink" href="#system-module" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.system</span></code> module.</p>
+<span class="target" id="module-zanzocam.webcam.system"></span><dl class="py class">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.system.</span></span><span class="sig-name descname"><span class="pre">System</span></span><a class="headerlink" href="#zanzocam.webcam.system.System" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Monitor and manages the operating system.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.apply_system_settings">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">apply_system_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system_settings</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#zanzocam.webcam.system.System.apply_system_settings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifies the system according to the new configuration.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.check_hotspot_allowed">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">check_hotspot_allowed</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.check_hotspot_allowed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks whether ZANZOCAM can turn on its hotspot at need.
+True if it can, False otherwise.
+If the file was not found, it creates it with a value YES.
+In case of exceptions, defaults to True.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.check_internet_connectivity">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">check_internet_connectivity</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.check_internet_connectivity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verifies that there is Internet connection to the outside.
+Returns True if there is Internet connection, False if there isn’t,
+None if an error occurred during the test.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.convert_bytes_into_string">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">convert_bytes_into_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bytes</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">str</span><a class="headerlink" href="#zanzocam.webcam.system.System.convert_bytes_into_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert an integer of bytes into a human readable string.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.copy_system_file">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">copy_system_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">source</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dest</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">bool</span><a class="headerlink" href="#zanzocam.webcam.system.System.copy_system_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies a file to a directory using sudo.
+Return True if the copy was successful, False otherwise</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_filesystem_size">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_filesystem_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_filesystem_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string with the size of the filesystem where the OS is running.
+Suffixes are KB, MB, GB, TB, Returns None if an error occurs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_free_space_on_disk">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_free_space_on_disk</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_free_space_on_disk" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string with the amount of free space left on the device.
+Suffixes are KB, MB, GB, TB, Returns None if an error occurs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_last_reboot_time">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_last_reboot_time</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_last_reboot_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the last reboot time of ZANZOCAM as a datetime object.
+Returns None if an error occurs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_ram_stats">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_ram_stats</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_ram_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string with some stats about the RAM and swap usage.
+Returns None if an error occurs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_uptime">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_uptime</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime.timedelta</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_uptime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the uptime of ZANZOCAM as a timedelta object.
+Returns None if an error occurs.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.get_wifi_ssid">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">get_wifi_ssid</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.get_wifi_ssid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the SSID of the WiFi it is connected to.
+Returns None if an error occurs and “” if the device is not connected
+to any WiFi network.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.give_ownership_to_root">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">give_ownership_to_root</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.system.System.give_ownership_to_root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give ownership of the specified file to root.
+Return True if the chown process worked, False otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.prepare_crontab_string">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">prepare_crontab_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.prepare_crontab_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts time directives from the configuration file into
+the content of the crontab itself.
+Return a list of strings, where each is a crontab line.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.remove_root_owned_file">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">remove_root_owned_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.system.System.remove_root_owned_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes ‘sudo rm &lt;path&gt;’
+Return True if the chown process worked, False otherwise.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.report_general_status">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">report_general_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><a class="headerlink" href="#zanzocam.webcam.system.System.report_general_status" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect general system data like version, uptime, internet connectivity.
+In all cases, None means that the value could not be retrieved
+(i.e. an error occurred). Errors will be logged in the console with
+their stacktraces for further debug.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.run_autohotspot">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">run_autohotspot</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.system.System.run_autohotspot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes the autohotspot script to make sure to connect
+to a new WiFi if so required.
+Returns True if connected to WiFi, False if on hotspot mode,
+None if error.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.system.System.update_crontab">
+<em class="property"><span class="pre">static</span> </em><span class="sig-name descname"><span class="pre">update_crontab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">time</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#zanzocam.webcam.system.System.update_crontab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the crontab and tries to recover for potential issues.
+Might refuse to update it in case of misconfigurations, in which case it
+will restore the old one and log the exceptions.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="camera-module">
+<h2>Camera module<a class="headerlink" href="#camera-module" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.camera</span></code> module.</p>
+</section>
+<section id="overlays-module">
+<h2>Overlays module<a class="headerlink" href="#overlays-module" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.overlays</span></code> module.</p>
+<span class="target" id="module-zanzocam.webcam.overlays"></span><dl class="py class">
+<dt class="sig sig-object py" id="zanzocam.webcam.overlays.Overlay">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.overlays.</span></span><span class="sig-name descname"><span class="pre">Overlay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_width</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_height</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">time_format</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.overlays.Overlay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Represents one overlay to add to the picture.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.overlays.Overlay.compute_position">
+<span class="sig-name descname"><span class="pre">compute_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_width</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image_height</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_top</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">border_bottom</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.overlays.Overlay.compute_position" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the x,y position in the picture where this overlay
+should be pasted.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.overlays.Overlay.create_image_overlay">
+<span class="sig-name descname"><span class="pre">create_image_overlay</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Any</span><a class="headerlink" href="#zanzocam.webcam.overlays.Overlay.create_image_overlay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepares an overlay containing an image.
+Might return None in case of issues.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.overlays.Overlay.create_text_overlay">
+<span class="sig-name descname"><span class="pre">create_text_overlay</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">photo_width</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">photo_height</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Any</span><a class="headerlink" href="#zanzocam.webcam.overlays.Overlay.create_text_overlay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prepares an overlay containing text.
+In case of issues, self.overlay_image will stay None.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.overlays.Overlay.process_text">
+<span class="sig-name descname"><span class="pre">process_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_line_length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#zanzocam.webcam.overlays.Overlay.process_text" title="Permalink to this definition">¶</a></dt>
+<dd><p>Measures and insert returns into the text to make it fit into the image.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="utils-module">
+<h2>Utils module<a class="headerlink" href="#utils-module" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.utils</span></code> module.</p>
+<span class="target" id="module-zanzocam.webcam.utils"></span><dl class="py class">
+<dt class="sig sig-object py" id="zanzocam.webcam.utils.AllStringEncoder">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.utils.</span></span><span class="sig-name descname"><span class="pre">AllStringEncoder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skipkeys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ensure_ascii</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">check_circular</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_nan</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sort_keys</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">indent</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separators</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.utils.AllStringEncoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">json.encoder.JSONEncoder</span></code></p>
+<p>To transform every value into a string</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="zanzocam.webcam.utils.AllStringEncoder.default">
+<span class="sig-name descname"><span class="pre">default</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">o</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#zanzocam.webcam.utils.AllStringEncoder.default" title="Permalink to this definition">¶</a></dt>
+<dd><p>Implement this method in a subclass such that it returns
+a serializable object for <code class="docutils literal notranslate"><span class="pre">o</span></code>, or calls the base implementation
+(to raise a <code class="docutils literal notranslate"><span class="pre">TypeError</span></code>).</p>
+<p>For example, to support arbitrary iterators, you could
+implement default like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="n">iterable</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">o</span><span class="p">)</span>
+    <span class="k">except</span> <span class="ne">TypeError</span><span class="p">:</span>
+        <span class="k">pass</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">list</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+    <span class="c1"># Let the base class default method raise the TypeError</span>
+    <span class="k">return</span> <span class="n">JSONEncoder</span><span class="o">.</span><span class="n">default</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">o</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="zanzocam.webcam.utils.log">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.utils.</span></span><span class="sig-name descname"><span class="pre">log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#zanzocam.webcam.utils.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs the message to the console</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="zanzocam.webcam.utils.log_error">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.utils.</span></span><span class="sig-name descname"><span class="pre">log_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">msg</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">Exception</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fatal</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#zanzocam.webcam.utils.log_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs an error to the console</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="zanzocam.webcam.utils.log_row">
+<span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.utils.</span></span><span class="sig-name descname"><span class="pre">log_row</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">'='</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">None</span><a class="headerlink" href="#zanzocam.webcam.utils.log_row" title="Permalink to this definition">¶</a></dt>
+<dd><p>Logs a row to the console</p>
+</dd></dl>
+
+</section>
+<section id="custom-errors">
+<h2>Custom Errors<a class="headerlink" href="#custom-errors" title="Permalink to this headline">¶</a></h2>
+<p>Details of the <code class="docutils literal notranslate"><span class="pre">zanzocam.webcam.errors</span></code> module.</p>
+<span class="target" id="module-zanzocam.webcam.errors"></span><dl class="py exception">
+<dt class="sig sig-object py" id="zanzocam.webcam.errors.ServerError">
+<em class="property"><span class="pre">exception</span> </em><span class="sig-prename descclassname"><span class="pre">zanzocam.webcam.errors.</span></span><span class="sig-name descname"><span class="pre">ServerError</span></span><a class="headerlink" href="#zanzocam.webcam.errors.ServerError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Sara Zanzottera.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
